@@ -1,0 +1,145 @@
+/*Denne fil er redigeret af ChatGPT 
+https://chat.openai.com/share/0db9a9ce-5456-4e02-afcc-97845b4f3c6c */
+
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Montserrat:wght@100&family=Roboto+Slab:wght@100&family=Syne:wght@600&display=swap');
+
+/* Nulstil margin og padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Sørg for, at body og html fylder hele skærmen */
+html, body {
+    height: 100%;
+}
+
+/* Fjern default margin på body */
+body {
+    margin: 0;
+}
+
+/* Stil for header-elementet */
+header {
+    background-color: #171d18;
+    width: 100%;
+    height: 100px; /* Juster efter behov */
+    color: #f9fbf3; /* Tekstfarve til kontrast */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px; /* Tilføjer lidt polstring til venstre og højre for indholdet */
+}
+
+/* Tilpas farven på navbaren */
+nav.navbar {
+    background-color: #171d18 !important; /* Baggrundsfarven på navbaren */
+}
+
+/* Tilpas farven på teksten i navbaren */
+nav.navbar a {
+    color: #f9fbf3; /* Farven på teksten i navbaren */
+}
+
+/* Juster padding til venstre for at give plads til logoet */
+nav {
+    padding-left: 20px; /* Juster efter behov */
+}
+
+/* Tilpasninger til logo og navigation */
+nav {
+    display: flex;
+    font-weight: bold; /* Gør skriften fed */
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Tilpasninger til navigationselementer */
+nav a {
+    margin: 0 10px;
+    color: #f9fbf3;
+    text-decoration: none;
+}
+
+/* Fjern hover-effekten for farven på navigationselementerne */
+nav a:hover {
+    color: inherit !important; /* Behold samme farve ved hover */
+    text-decoration: none; /* Fjern understregning ved hover */
+}
+
+/* Tilpas farven på Tilmeld Dig-linket */
+nav a.signup {
+    background-color: #ffffff; /* Hvid baggrundsfarve */
+    padding: 5px 10px; /* Juster polstring efter behov */
+    color: #171d18; /* Tekstfarve */
+    text-decoration: none;
+    display: flex; /* Aktiverer Flexbox */
+    align-items: center; /* Centrer lodret */
+    justify-content: center; /* Centrer vandret */
+}
+
+/* Tilpas farven på dropdown-menu */
+.dropdown-menu {
+    background-color: #171d18 !important; /* Samme farve som baggrundsfarven */
+
+}
+
+/* Tilpas farven på dropdown-menu-indhold */
+.dropdown-menu a {
+    color: #f9fbf3 !important; /* Farven på teksten i dropdown-menu */
+    font-weight: bold;
+}
+
+/* Fjern hover-effekten for farven på dropdown-menu-indholdet */
+.dropdown-menu a:hover {
+    color: inherit !important; /* Behold samme farve ved hover */
+    text-decoration: none; /* Fjern understregning ved hover */
+}
+
+/* ... (tidligere stilarter) ... */
+
+/* Tilpas farven på dropdown-menu */
+.dropdown-menu {
+    background-color: #1a1d20; /* Ændr baggrundsfarven efter behov */
+    border: 1px solid #3d4246; /* Ændr kantlinjefarven efter behov */
+    max-height: 200px; /* Juster maksimal højde efter behov */
+    z-index: 1000; /* Sæt en høj z-index-værdi for at sikre, at dropdown-menuen er forrest */
+}
+
+/* ... (andre stilarter) ... */
+
+
+/* Tilpas farven på dropdown-menu-indhold */
+.dropdown-menu a {
+    color: #f9fbf3 !important; /* Farven på teksten i dropdown-menu */
+    font-weight: bold;
+}
+
+/* Fjern hover-effekten for farven på dropdown-menu-indholdet */
+.dropdown-menu a:hover {
+    color: inherit !important; /* Behold samme farve ved hover */
+    text-decoration: none; /* Fjern understregning ved hover */
+}
+
+
+/* Tilpasninger til logo */
+.logo {
+    margin-right: 10px; /* Juster efter behov */
+}
+
+/* Tilpasninger til navigationselementer */
+nav a {
+    margin: 0 10px;
+    color: #f9fbf3;
+    text-decoration: none;
+}
+
+/* Stil for footer-elementet */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #171d18;
+    color: white;
+}
