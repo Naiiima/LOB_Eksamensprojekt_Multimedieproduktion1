@@ -1,9 +1,9 @@
-/*Denne fil er redigeret af ChatGPT 
+/* Denne fil er redigeret af ChatGPT 
 https://chat.openai.com/share/0db9a9ce-5456-4e02-afcc-97845b4f3c6c */
 
 @import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Montserrat:wght@100&family=Roboto+Slab:wght@100&family=Syne:wght@600&display=swap');
 
-/* Nulstil margin og padding */
+/* Nulstil margin og padding, og sæt font-family */
 * {
     margin: 0;
     padding: 0;
@@ -42,7 +42,11 @@ nav.navbar {
 nav.navbar a {
     color: #f9fbf3; /* Farven på teksten i navbaren */
 }
-
+/* Ændr baggrundsfarven på burger-menu-knappen til sort */
+.navbar-toggler {
+    background-color: #171d18; /* Sort baggrundsfarve */
+    border: none; /* Fjern kantlinje */
+}
 /* Juster padding til venstre for at give plads til logoet */
 nav {
     padding-left: 20px; /* Juster efter behov */
@@ -53,7 +57,7 @@ nav {
     display: flex;
     font-weight: bold; /* Gør skriften fed */
     justify-content: flex-start;
-    align-items: center;
+    align-items: right;
 }
 
 /* Tilpasninger til navigationselementer */
@@ -82,45 +86,35 @@ nav a.signup {
 
 /* Tilpas farven på dropdown-menu */
 .dropdown-menu {
-    background-color: #171d18 !important; /* Samme farve som baggrundsfarven */
-
+    background-color: #171d18 !important; /* Behold samme farve som baggrundsfarven */
+    border: 1px solid #3d4246;
+    max-height: 200px;
+    z-index: 1000;
+    width: auto; /* eller en bestemt bredde efter behov */
+    max-width: none; /* eller en bestemt maksimal bredde efter behov */
+    position: absolute !important;
 }
 
 /* Tilpas farven på dropdown-menu-indhold */
 .dropdown-menu a {
     color: #f9fbf3 !important; /* Farven på teksten i dropdown-menu */
     font-weight: bold;
+    margin: 0;
+    padding: 0;
+    padding-left: 10px; /* Tilføj padding til venstre (juster efter behov) */
 }
 
 /* Fjern hover-effekten for farven på dropdown-menu-indholdet */
 .dropdown-menu a:hover {
     color: inherit !important; /* Behold samme farve ved hover */
     text-decoration: none; /* Fjern understregning ved hover */
+    margin: 0;
+    padding: 0;
+    padding-left: 10px; /* Tilføj padding til venstre ved hover (juster efter behov) */
 }
-
-/* ... (tidligere stilarter) ... */
-
-/* Tilpas farven på dropdown-menu */
-.dropdown-menu {
-    background-color: #1a1d20; /* Ændr baggrundsfarven efter behov */
-    border: 1px solid #3d4246; /* Ændr kantlinjefarven efter behov */
-    max-height: 200px; /* Juster maksimal højde efter behov */
-    z-index: 1000; /* Sæt en høj z-index-værdi for at sikre, at dropdown-menuen er forrest */
-}
-
-/* ... (andre stilarter) ... */
-
-
-/* Tilpas farven på dropdown-menu-indhold */
-.dropdown-menu a {
-    color: #f9fbf3 !important; /* Farven på teksten i dropdown-menu */
-    font-weight: bold;
-}
-
-/* Fjern hover-effekten for farven på dropdown-menu-indholdet */
-.dropdown-menu a:hover {
-    color: inherit !important; /* Behold samme farve ved hover */
-    text-decoration: none; /* Fjern understregning ved hover */
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
 }
 
 
