@@ -20,15 +20,26 @@
 
 <body>
     <header>
-        <img class="logo" src="img/logo/LOB-logo.svg" alt="LOBLogo" width="75px" height="75px">
+        <img class="logo" src="img/logo/LOB-logo.svg" alt="LOBLogo" width="75" height="75">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <!-- Burgermenu på små skærme -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+                    <!-- brugerdefinerede Burgermenu ikon -->
+                    <img src="img/content/icons/burger-menu-1.svg" alt="Burger Menu" width="40" height="40" />
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <!-- Dropdown-menu -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 DISCIPLINER
                             </a>
+
+                            <!-- Links i dropdownmanuen -->
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="fodbold.html">Fodbold</a></li>
                                 <li><a class="dropdown-item" href="#">Badminton</a></li>
@@ -37,6 +48,8 @@
                                 <li><a class="dropdown-item" href="#">Fitness</a></li>
                             </ul>
                         </li>
+                        
+                        <!-- De andre links i navbaren -->
                         <li class="nav-item">
                             <a class="nav-link" href="fodbold.html">LOBBYEN</a>
                         </li>
