@@ -42,11 +42,7 @@ nav.navbar {
 nav.navbar a {
     color: #f9fbf3; /* Farven på teksten i navbaren */
 }
-/* Ændr baggrundsfarven på burger-menu-knappen til sort */
-.navbar-toggler {
-    background-color: #171d18; /* Sort baggrundsfarve */
-    border: none; /* Fjern kantlinje */
-}
+
 /* Juster padding til venstre for at give plads til logoet */
 nav {
     padding-left: 20px; /* Juster efter behov */
@@ -68,7 +64,7 @@ nav a {
 }
 
 /* Fjern hover-effekten for farven på navigationselementerne */
-nav a:hover {
+.dropdown-menu :hover {
     color: inherit !important; /* Behold samme farve ved hover */
     text-decoration: none; /* Fjern understregning ved hover */
 }
@@ -112,6 +108,16 @@ nav a.signup {
     padding: 0;
     padding-left: 10px; /* Tilføj padding til venstre ved hover (juster efter behov) */
 }
+/* Media, der justere på menuens placering når man klikker på Burgermenuen */
+@media (max-width: 992px) {
+    .navbar-collapse {
+      position: absolute;
+      top: 56px; /* Juster denne værdi efter behov for at ændre startpositionen */
+      right: 10px;
+      background-color: #171d18;
+    }
+  }
+    
 .container-fluid {
     display: flex;
     justify-content: space-between;
@@ -132,8 +138,19 @@ nav a {
 
 /* Stil for footer-elementet */
 footer {
-    text-align: center;
-    padding: 10px;
     background-color: #171d18;
     color: white;
+}
+
+footer h1 {
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+}
+footer h5 {
+    font-weight: bold;
+}
+footer h6 {
+    font-weight: bold;
+    text-align: center;
 }
