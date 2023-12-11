@@ -1,7 +1,7 @@
 /* Denne fil er redigeret af ChatGPT 
 https://chat.openai.com/share/0db9a9ce-5456-4e02-afcc-97845b4f3c6c */
 
-@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Montserrat:wght@100&family=Roboto+Slab:wght@100&family=Syne:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
 
 /* Nulstil margin og padding, og sæt font-family */
 * {
@@ -32,6 +32,24 @@ header {
     justify-content: space-between;
     padding: 0 20px; /* Tilføjer lidt polstring til venstre og højre for indholdet */
 }
+.navbar-nav li.nav-item:hover a {
+    color: #FCD553 !important; /* Tekstfarven ved hover */
+}
+/* For almindelige links i dropdown-menuen */
+.navbar-nav li.nav-item .dropdown-menu a {
+    color: #f9fbf3 !important; /* Standard tekstfarve */
+}
+
+/* Ved hover på toppeniveau-linket */
+.navbar-nav li.nav-item.dropdown:hover > a {
+    color: #FCD553 !important; /* Tekstfarven ved hover på toppeniveau-linket */
+}
+/* Ændre farven for teksten i dropdown-menuen ved hover */
+.navbar-nav li.nav-item.dropdown:hover .dropdown-menu a:hover {
+    color: black !important; /* Tekstfarven ved hover for links i dropdown-menuen */
+}
+
+
 
 /* Tilpas farven på navbaren */
 nav.navbar {
@@ -52,6 +70,7 @@ nav {
 nav {
     display: flex;
     font-weight: bold; /* Gør skriften fed */
+    font-size: 16px;
     justify-content: flex-start;
     align-items: right;
 }
@@ -62,10 +81,13 @@ nav a {
     color: #f9fbf3;
     text-decoration: none;
 }
+nav a.hover{
+    color: yellow;
+}
 
 /* Fjern hover-effekten for farven på navigationselementerne */
 .dropdown-menu :hover {
-    color: inherit !important; /* Behold samme farve ved hover */
+    color: #171d18 !important; /* Behold samme farve ved hover */
     text-decoration: none; /* Fjern understregning ved hover */
 }
 
@@ -83,7 +105,6 @@ nav a.signup {
 /* Tilpas farven på dropdown-menu */
 .dropdown-menu {
     background-color: #171d18 !important; /* Behold samme farve som baggrundsfarven */
-    border: 1px solid #3d4246;
     max-height: 200px;
     z-index: 1000;
     width: auto; /* eller en bestemt bredde efter behov */
@@ -141,14 +162,16 @@ footer {
     background-color: #171d18;
     color: white;
 }
-
+footer img{
+    padding-right: 10px;
+}
 footer h1 {
     text-align: center;
     padding: 10px;
-    font-weight: bold;
 }
 footer h5 {
     font-weight: bold;
+    font-size: 16px;
 }
 footer h6 {
     font-weight: bold;
