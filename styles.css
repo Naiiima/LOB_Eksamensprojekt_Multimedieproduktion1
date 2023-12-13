@@ -2,7 +2,6 @@
 https://chat.openai.com/share/0db9a9ce-5456-4e02-afcc-97845b4f3c6c */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
-
 /* Nulstil margin og padding, og sæt font-family */
 * {
     margin: 0;
@@ -19,6 +18,9 @@ html, body {
 /* Fjern default margin på body */
 body {
     margin: 0;
+    background: url(img/content/Baggrund/shape.png);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 /* Stil for header-elementet */
@@ -32,17 +34,26 @@ header {
     justify-content: space-between;
     padding: 0 20px; /* Tilføjer lidt polstring til venstre og højre for indholdet */
 }
+header .logo {
+    margin-right: 600px; /* Tilføj denne regel for at øge margenen til højre af logoet */
+}
+header .navbar-toggler {
+    margin-left: 350px; /* Tilføj denne regel for at øge margenen til højre af burgermenuknappen */
+    margin-top: -90px; /* Tilføj denne regel for at justere margenen opad for burgermenuknappen */
+    padding-top: 5px; /* Tilføj denne regel for at justere paddingen opad for burgermenuknappen */
+}
+
 .navbar-nav li.nav-item:hover a {
-    color: #FCD553 !important; /* Tekstfarven ved hover */
+    color: #FCD553 ; /* Tekstfarven ved hover */
 }
 /* For almindelige links i dropdown-menuen */
 .navbar-nav li.nav-item .dropdown-menu a {
-    color: #f9fbf3 !important; /* Standard tekstfarve */
+    color: #f9fbf3 ; /* Standard tekstfarve */
 }
 
 /* Ved hover på toppeniveau-linket */
 .navbar-nav li.nav-item.dropdown:hover > a {
-    color: #FCD553 !important; /* Tekstfarven ved hover på toppeniveau-linket */
+    color: #FCD553 ; /* Tekstfarven ved hover på toppeniveau-linket */
 }
 /* Ændre farven for teksten i dropdown-menuen ved hover */
 .navbar-nav li.nav-item.dropdown:hover .dropdown-menu a:hover {
@@ -50,7 +61,7 @@ header {
 }
 
 .navbar-nav .nav-item {
-    margin-right: 15px; /* Juster margenen efter behov */
+    margin-right: 20px; /* Juster margenen efter behov */
     margin-top: 8px;
     font-size: 16px;
 }
@@ -93,62 +104,54 @@ nav a.hover{
 
 /* Fjern hover-effekten for farven på navigationselementerne */
 .dropdown-menu :hover {
-    color: #171d18 !important; /* Behold samme farve ved hover */
     text-decoration: none; /* Fjern understregning ved hover */
 }
 
 /* Tilpas farven på Tilmeld Dig-linket */
 nav a.signup {
-    background-color: #ffffff; /* Hvid baggrundsfarve */
+    background-color: #f9fbf3; /* Hvid baggrundsfarve */
     padding: 15px;
     color: #171d18; /* Tekstfarve */
     text-decoration: none;
     display: flex; /* Aktiverer Flexbox */
     align-items: center; /* Centrer lodret */
     justify-content: center; /* Centrer vandret */
-    width: 150px !important;
+    width: 150px;
     
 }
 /* Tilpas farven på dropdown-menu */
 .dropdown-menu {
-    background-color: #171d18 !important; /* Behold samme farve som baggrundsfarven */
     max-height: 200px;
     z-index: 1000;
     width: auto; /* eller en bestemt bredde efter behov */
     max-width: none; /* eller en bestemt maksimal bredde efter behov */
-    position: absolute !important;
+    position: absolute;
 }
 /* Fælles regler for både normal og hover tilstand */
 .navbar-nav li.nav-item.dropdown .dropdown-menu {
-    background-color: #171d18 !important; /* Tilpas baggrundsfarven efter behov */
+    background-color: #171d18; /* Tilpas baggrundsfarven efter behov */
     min-height: auto; /* Gør min-height auto, så den tilpasses indholdet */
     padding: 10px; /* Juster padding efter behov for at øge højden omkring linksene */
-    max-height: none !important; /* Overrule max-height */
+    max-height: none; /* Overrule max-height */
 }
 
 /* Tilføj position: static; til linksene inden for dropdown-menuen */
 .navbar-nav li.nav-item.dropdown .dropdown-menu a {
     position: static;
     line-height: 30px; /* Ændrer line-height for teksten i dropdown-menuen */
-    color: #f9fbf3 !important; /* Standard tekstfarve */
+    color: #f9fbf3; /* Standard tekstfarve */
     display: block;
     padding: 10px;
 }
 
 /* Ved hover på dropdown-menuen */
 .navbar-nav li.nav-item.dropdown:hover .dropdown-menu a {
-    color: #f9fbf3 !important; /* Tekstfarven ved hover for links i dropdown-menuen */
+    color: #f9fbf3; /* Tekstfarven ved hover for links i dropdown-menuen */
 }
-
-/* Ændre farven for teksten i dropdown-menuen ved hover */
-.navbar-nav li.nav-item.dropdown .dropdown-menu a:hover {
-    color: #FCD553 !important; /* Tekstfarven ved hover for links i dropdown-menuen */
-}
-
 
 /* Tilpas farven på dropdown-menu-indhold */
 .dropdown-menu a {
-    color: #f9fbf3 !important; /* Farven på teksten i dropdown-menu */
+    color: #f9fbf3; /* Farven på teksten i dropdown-menu */
     font-weight: bold;
     margin: 0;
     padding: 0;
@@ -157,7 +160,7 @@ nav a.signup {
 
 /* Fjern hover-effekten for farven på dropdown-menu-indholdet */
 .dropdown-menu a:hover {
-    color: inherit !important; /* Behold samme farve ved hover */
+    color: inherit; /* Behold samme farve ved hover */
     text-decoration: none; /* Fjern understregning ved hover */
     margin: 0;
     padding: 0;
@@ -170,16 +173,7 @@ nav a.signup {
 }
 
 
-/* Tilpasninger til logo */
-    /* Stilregler for header-logo */
-    header .logo {
-        margin-right: 20px; /* Juster denne værdi for at ændre afstanden mellem header-logoet og indholdet */
-    }
 
-    /* Stilregler for footer-logo */
-    footer .logo {
-        margin-right: 20px; /* Juster denne værdi for at ændre afstanden mellem footer-logoet og indholdet */
-    }
 
 /* Tilpasninger til navigationselementer */
 nav a {
@@ -188,10 +182,27 @@ nav a {
     text-decoration: none;
 }
 
-/* Stil for footer-elementet */
+
+
+/* CSS for footer-elementet */
+
 footer {
+    margin-top: 50px;
     background-color: #171d18;
     color: white;
+}
+footer .container {
+    padding-top: 20px;
+}
+
+/* Juster logoets position i footer */
+footer .footerlogo {
+    text-align: left;
+    padding-bottom: 50px;
+}
+
+footer .col-md-3 {
+    text-align: left;
 }
 footer p{
     line-height: 10px;
@@ -199,40 +210,40 @@ footer p{
 footer a{
     line-height: 50px;
 }
-/* Stilregler for footer-logo */
-footer .logo {
-    margin-top: 20px;
-    margin-left: 20px;
+
+footer .footertilmelding {
+    background-color: #FCD553;
+    color: #171d18;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    padding: 10px;
 }
-    footer .footertilmelding {
-        background-color: #FCD553;
-        color: #171d18;
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: bold;
-        padding: 10px;
-    }
-    footer .col-md-3 .footertilmelding {
-        width: 150px !important;
-    }
-    footer label{
-        margin-top: 30px;
-    }
-    footer .SOCIAL{
-    }
-    footer .sport{
-        margin-left: 20px;
-    }
+footer .col-md-3 .footertilmelding {
+    width: 150px;
+}
+
+footer label{
+    margin-top: 30px;
+}
+
+footer .sport{
+    margin-left: 50px;
+    text-align: left;
+}
+
 footer h1 {
     text-align: center;
     padding: 10px;
 }
+
 footer h5 {
     font-weight: bold;
     font-size: 16px;
 }
+
 footer h6 {
     font-weight: bold;
     text-align: center;
@@ -248,29 +259,29 @@ footer h6 {
     }
     /* Fælles regler for både normal og hover tilstand */
     .navbar-nav li.nav-item.dropdown .dropdown-menu {
-        background-color: #171d18 !important; /* Tilpas baggrundsfarven efter behov */
+        background-color: #171d18; /* Tilpas baggrundsfarven efter behov */
         min-height: auto; /* Gør min-height auto, så den tilpasses indholdet */
         padding: 10px; /* Juster padding efter behov for at øge højden omkring linksene */
-        max-height: none !important; /* Overrule max-height */
+        max-height: none; /* Overrule max-height */
     }
 
     /* Tilføj position: static; til linksene inden for dropdown-menuen */
     .navbar-nav li.nav-item.dropdown .dropdown-menu a {
         position: static;
         line-height: 20px; /* Ændrer line-height for teksten i dropdown-menuen */
-        color: #f9fbf3 !important; /* Standard tekstfarve */
+        color: #f9fbf3; /* Standard tekstfarve */
         display: block;
         padding: 10px;
     }
 
     /* Ved hover på dropdown-menuen */
     .navbar-nav li.nav-item.dropdown:hover .dropdown-menu a {
-        color: #f9fbf3 !important; /* Tekstfarven ved hover for links i dropdown-menuen */
+        color: #f9fbf3; /* Tekstfarven ved hover for links i dropdown-menuen */
     }
 
     /* Ændre farven for teksten i dropdown-menuen ved hover */
     .navbar-nav li.nav-item.dropdown .dropdown-menu a:hover {
-        color: #FCD553 !important; /* Tekstfarven ved hover for links i dropdown-menuen */
+        color: #FCD553; /* Tekstfarven ved hover for links i dropdown-menuen */
     }
 
     /* Tilpas linjeafstanden mellem footer-elementerne på små skærme */
@@ -313,4 +324,119 @@ footer h6 {
         white-space: pre-line; /* Beholder linjeskift i teksten */
     }
 
+/* CSS for siden "DICIPLINER" */
 
+.overskrift {
+    font-weight: bold;
+    font-size: 48px;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-top: 50px;
+}
+.u-overskrift {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 36px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    margin-top: -20px;
+}
+.su-overskrift {
+    max-width: 500px; /* Juster bredden efter behov */
+    margin: 0 auto; /* Center tekstblok vandret */
+    padding: 20px; /* Tilføj indrykning eller afstand efter behov */
+    text-align: left; /* Venstrestil teksten */
+    font-weight: 200;
+}
+
+/* CSS for siden "Fodbold" */
+
+.fodboldp {
+    max-width: 500px; /* Juster bredden efter behov */
+    margin: 0 auto; /* Center tekstblok vandret */
+    padding: 20px; /* Tilføj indrykning eller afstand efter behov */
+    text-align: left; /* Venstrestil teksten */
+}
+.fodbold-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fodbold-col-6 {
+    width: 50%;
+    max-width: 500px; /* Juster bredden efter behov */
+    margin: 0 auto; /* Center tekstblok vandret */
+    padding: 20px; /* Tilføj indrykning eller afstand efter behov */
+    text-align: left; /* Venstrestil teksten */
+}
+
+.col-6 {
+    width: 48%; /* Adjust as needed */
+}
+.OLDBOYSFODBOLD {
+    max-width: 500px; /* Juster bredden efter behov */
+    margin: 0 auto; /* Center tekstblok vandret */
+    padding: 20px; /* Tilføj indrykning eller afstand efter behov */
+    text-align: left; /* Venstrestil teksten */
+}
+
+
+/* CSS for siden "Badminton" */
+
+.BADMINTONInfo-om-bold {
+    max-width: 500px; /* Juster bredden efter behov */
+    margin: 0 auto; /* Center tekstblok vandret */
+    padding: 20px; /* Tilføj indrykning eller afstand efter behov */
+    text-align: left; /* Venstrestil teksten */
+    padding-bottom: 100px;
+}
+
+.BADMINTONp {
+    max-width: 500px; /* Juster bredden efter behov */
+    margin: 0 auto; /* Center tekstblok vandret */
+    padding: 20px; /* Tilføj indrykning eller afstand efter behov */
+    text-align: left; /* Venstrestil teksten */
+}
+
+/* CSS for siden "Fitness" */
+
+.FitnessInfo-om-bold {
+    max-width: 500px; /* Juster bredden efter behov */
+    margin: 0 auto; /* Center tekstblok vandret */
+    padding: 20px; /* Tilføj indrykning eller afstand efter behov */
+    text-align: left; /* Venstrestil teksten */
+    padding-bottom: 100px;
+}
+.Fitnessp {
+    max-width: 500px; /* Juster bredden efter behov */
+    margin: 0 auto; /* Center tekstblok vandret */
+    padding: 20px; /* Tilføj indrykning eller afstand efter behov */
+    text-align: left; /* Venstrestil teksten */
+}
+.FitnesspBreak {
+    max-width: 500px; /* Juster bredden efter behov */
+    margin: 0 auto; /* Center tekstblok vandret */
+    padding: 20px; /* Tilføj indrykning eller afstand efter behov */
+    text-align: left; /* Venstrestil teksten */
+}
+/* CSS for siden "LØB" */
+.LOBp {
+    max-width: 500px; /* Juster bredden efter behov */
+    margin: 0 auto; /* Center tekstblok vandret */
+    padding: 20px; /* Tilføj indrykning eller afstand efter behov */
+    text-align: left; /* Venstrestil teksten */
+}
+
+.LOBpmargintop {
+    max-width: 500px; /* Juster bredden efter behov */
+    margin: 0 auto; /* Center tekstblok vandret */
+    padding: 20px; /* Tilføj indrykning eller afstand efter behov */
+    text-align: left; /* Venstrestil teksten */
+}
+/* CSS for siden "Volleyball" */
+.vollyp {
+    max-width: 500px; /* Juster bredden efter behov */
+    margin: 0 auto; /* Center tekstblok vandret */
+    padding: 20px; /* Tilføj indrykning eller afstand efter behov */
+    text-align: left; /* Venstrestil teksten */
+}
