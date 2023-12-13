@@ -323,7 +323,20 @@ footer h6 {
     footer label {
         white-space: pre-line; /* Beholder linjeskift i teksten */
     }
-
+/* CSS for siden "Sitet" */
+.breadcrumb {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #171D18;
+    text-transform: uppercase;
+    }
+    .breadcrumb-item a {
+        color: #B4B4B4
+    }
+    .breadcrumb-item.active {
+        color: #171D18;
+    }
 /* CSS for siden "DICIPLINER" */
 
 .overskrift {
