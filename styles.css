@@ -239,6 +239,11 @@ nav a {
     text-decoration: none;
     margin-top: 10px;
 }
+
+.button2 a {
+    text-decoration: none;
+    color: #171d18;
+} 
 .list {
     margin-left: 40px;
     margin-right: 40px;
