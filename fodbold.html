@@ -1,213 +1,234 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="da">
 <head>
-    <link rel="shortcut icon" href="img/logo/lob-favicon.svg">
     <meta name="robots" content="noindex">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <title>Fodbold</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>LIND OLD BOYS - fodbold</title>
+    <link rel="icon" href="media/lob-favicon.svg" type="image/svg+xml" sizes="any">
 </head>
 
 
-
 <!-- Bootstrap JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 
-<body>
+<body class="fodbold">
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-            <a class="logo" href="index.html"><img src="img/logo/LOB-logo.svg" alt="LOB-logo Logo" width="75px"
-                    height="75px" /></a>
+            <a class="logo" href="index.html"><img src="media/LOB-logo.svg" alt="LOB-logo Logo" width="75px" height="75px"/></a>
             <div class="container-fluid">
 
                 <!-- Burgermenu på små skærme -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 
                     <!-- brugerdefinerede Burgermenu ikon -->
-                    <img src="img/content/icons/burger-menu-1.svg" alt="Burger Menu" width="40" height="40" />
+                    <img src="media/burger-menu-1.svg" alt="Burger Menu" width="40" height="40" />
                 </button>
                 <div class="navbar-collapse collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                         <!-- Dropdown-menu -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 DISCIPLINER
                             </a>
 
                             <!-- Links i dropdownmanuen -->
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="fodbold.html">Fodbold</a></li>
-                                <li><a class="dropdown-item" href="Badminton.html">Badminton</a></li>
-                                <li><a class="dropdown-item" href="Løb.html">Løb</a></li>
-                                <li><a class="dropdown-item" href="Volleyball.html">Vollyball</a></li>
+                                <li><a class="dropdown-item" href="badmington.html">Badminton</a></li>
+                                <li><a class="dropdown-item" href="loeb.html">Løb</a></li>
+                                <li><a class="dropdown-item" href="volleybold.html">Volleyball</a></li>
                                 <li><a class="dropdown-item" href="Fitness.html">Fitness</a></li>
                             </ul>
                         </li>
 
                         <!-- De andre links i navbaren -->
+                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="lobbyen.html">LOBBYEN</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Lobbyen.html">LOBBYEN</a>
+                            <a class="nav-link" href="arrangementer.html">ARRANGEMENTER</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Arrangementer.html">ARRANGEMENTER</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Galleri.html">GALLERI</a>
+                            <a class="nav-link" href="galleri.html">GALLERI</a>
                         </li>
                         <li class="tilmeldknap">
-                            <a class="nav-link signup" href="Tilmeld dig.html">TILMELD DIG</a>
+                            <a class="nav-link signup" href="tilmelding.html">TILMELD DIG</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Kontakt.html">KONTAKT</a>
+                            <a class="nav-link" href="kontakt.html">KONTAKT</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="col-md-12 text-left mt-5">
-        <nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html">LOB</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Descipliner / Fodbold</li>
-            </ol>
-        </nav>
-    </div>
-    <section>
-        <div class="container">
-            <h1 class="overskrift">DISCIPLINER</h1>
-            <h2 class="u-overskrift">Fodbold</h2>
-        </div>
-        <div>
-            <p class="fodboldp">Lind Old Boys er tilmeldt udendørs turnering ved DGI.<br>
-                Hjemmekampene spilles på banerne ved Alpi Hallerne, med<br>
-                omklædning i kælderen under hal 2.<br>
-                Efter kampen hygger vi os i vores klublokale, LOBbyen, som er<br>
-                i kælderen under hal 2.</p>
-            <br>
-            <p class="fodboldp">Til turneringen har vi tilmeldt 2 hold i følgende rækker:</p>
-            <div class="OLDBOYSFODBOLD">
-                <h2>OLD BOYS</h2>
-                <p>OLD BOYS - 11 Mands Fyldt 30 år</p>
-                <h2>SENIOR OLD BOYS</h2>
-                <p>Senior OLD BOYS - 11 Mands Fyldt 40 år</p>
-            </div>
-            <h2 class="u-overskrift">Vores Hold og Holdledere</h2>
-            <div class="fodbold-container">
-                <div class="fodbold-col-6">
-                    <h3 class="fodboldpcol">OLD BOYS 40+</h3>
-                    <p class="fodboldpcol">Allan Thomsen<br>tlf. 41 74 16 79<br>mail: <a
-                            href="mailto:bldamsgaard@gmail.com">ath@jysk.dk</a></p>
-                    <p class="fodboldpcol">og</p>
-                    <p class="fodboldpcol">Christian Moesgaard<br>tlf. 22 11 55 59<br>mail: <a
-                            href="mailto:chri4696@gmail.com">chri4696@gmail.com</a></p>
-                </div>
-                <div class="fodbold-col-6">
-                    <h3 class="fodboldpcol">OLD BOYS 40+</h3>
-                    <p class="fodboldpcol">Dino Vestergard<br>tlf. 40 71 83 56<br>mail: <a
-                            href="mailto:dinovestergaard@hotmail.com">dinovestergaard@hotmail.com</a></p>
-                    <p class="fodboldpcol">og</p>
-                    <p class="fodboldpcol">Allan Thomsen<br>tlf. 41 74 16 79<br>mail: <a
-                            href="mailto:bldamsgaard@gmail.com">ath@jysk.dk</a></p>
-                </div>
-            </div>
-            <h2 class="u-overskrift">Vores Hold og Holdledere</h2>
-            <div>
-                <p class="fodboldp">Fra uge 43 (31.10.) træner vi hver tirsdag aften fra kl. 20.00 – 23.00<br>i Alpi
-                    Hallerne (hal 2).
-                    <br>Så hvis du er interesseret i at spille indendørs fodbold, kontakt
-                    <br>sjakbajs:
-                </p>
-                <p class="fodboldp">Allan Thomsen<br>tlf. 41 74 16 79<br>mail: <a
-                        href="mailto:bldamsgaard@gmail.com">ath@jysk.dk</a></p>
-                <p class="fodboldp">eller bare mød op i hallen mandag
-                    aften kl. 20:00.</p>
-            </div>
-        </div>
-    </section>
 
-    <!--Her er starter vores footer-->
-    <footer>
-        <div class="container">
-            <div class="footerlogo">
-                <a class="logo" href="index.html"><img src="img/logo/LOB-logo.svg" alt="LOB-logo Logo" width="75px"
-                        height="75px" /></a>
+ <!-- INDHOLD -->
+ <div class="container-fluid content">
+    <div class="container mx-auto">
+        <div class="row">
+
+            <div class="col-md-12 text-left mt-5">
+                <nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">LOB</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Fodbold</li>
+                    </ol>
+                </nav>
             </div>
-            <div class="row">
-                <div class="col-md-3">
-                    <h5 class="address">ADDRESSE</h5>
-                    <br>
-                    <p>Kollundvej 33</p>
-                    <p>7400 Herning</p>
-                    <p>Klublokale - LOBbyen</p>
-                    <P>i kælderen under hal 2</P>
-                    <p>ALPI Hallerne.</p>
-                </div>
-                <div class="col-md-3">
-                    <h5>BESTYRELSEN</h5>
-                    <a class="nav-link" href="Generalforsamling.html">Generalforsamling</a>
-                    <a class="nav-link" href="Vedtægter.html">Vedtægter</a>
-                    <a class="nav-link" href="Privatlivspolitik.html">Privatlivspolitik</a>
-                </div>
-                <div class="col-md-3">
-                    <h5>LINKS</h5>
-                    <a class="nav-link" href="https://lindoldgirls.dk/">LOG - Lind Old Girls</a>
-                    <a class="nav-link" href="http://www.lindborger.dk/">Lind Borgerforening</a>
-                    <a class="nav-link" href="https://alpihallerne.dk/">ALPI Hallerne</a>
-                    <a class="nav-link" href="https://desmaaklinger.dk/">De Små Klinger</a>
-                    <a class="nav-link" href="http://klg-lind.dk/">KLG</a>
-                </div>
-                <div class="col-md-3">
-                    <h5>MENU</h5>
-                    <a class="nav-link" href="fodbold.html">Discipliner</a>
-                    <div class="sport">
-                        <a class="nav-link" href="fodbold.html">Fodbold</a>
-                        <a class="nav-link" href="Badminton.html">Badminton</a>
-                        <a class="nav-link" href="Løb.html">Løb</a>
-                        <a class="nav-link" href="Volleyball.html">Volleyball</a>
-                        <a class="nav-link" href="Fitness.html">Fitness</a>
+
+            <div class="col-md-12 text-center mb-5">
+                <div class="intro text-center">
+                    <h2 class="title">Discipliner</h2>
+                        <h3 class="title-undercategory">Fodbold</h3>
+
+                        <div class="text-klub">
+                                    <p>Lind Old Boys er tilmeldt udendørs turnering ved DGI. 
+                                    Hjemmekampene spilles på banerne ved Alpi Hallerne, med omklædning i kælderen under hal 2. 
+                                    Efter kampen hygger vi os i vores klublokale, LOBbyen, som er 
+                                    i kælderen under hal 2. </p><br>
+
+                                    <p>Til turneringen har vi tilmeldt 2 hold i følgende rækker:</p>
+                        <h4 class="title-group">OLD BOYS</h4>
+                                    <p>Old Boys – 11 mands fyldt 30 år</p>
+                        <h4 class="title-group">SENIOR OLD BOYS</h4>
+                                    <p>Senior Old Boys – 11 mands fyldt 40 år</p>
+
+                        <h4 class="title-hold">Vores hold og holdledere</h4>
+                        <div class="container-hold">
+
+                                    <div class="column-hold">
+                                        <h4 class="title-hold">OLD BOYS 40+</h4>
+                                            <p>Holdleder:</p>
+                                                <div class="info-card">
+                                                    <p>Allan Thomsen</p>                                  
+                                                    <p>tlf.: 41 74 16 79</p>
+                                                    <p>mail: ath@jysk.dk</p>                                       
+                                                    <p>og</p>
+                                                    <p>Christian Moesgaard</p>
+                                                    <p>tlf. 22 11 55 59</p>
+                                                    <p>mail: chri4696@gmail.com</p>
+                                                </div>
+                                        </div>
+
+                                    <div class="column-hold">
+                                        <h4 class="title-hold">OLD BOYS 30+</h4>
+                                            <p>Holdleder:</p>
+                                                <div class="info-card"></div>
+                                                    <p>Dino Vestergaard</p>
+                                                    <p>tlf. 40 71 83 56</p>
+                                                    <p>mail: dinovestergaard@hotmail.com</p>
+                                                    <p>og</p>
+                                                    <p>Allan Thomsen</p>
+                                                    <p>tlf. 41 74 16 79</p>
+                                                    <p>mail: ath@jysk.com</p>
+                                                </div>
+                                            </div>
+                                    </div>
+                        </div>
+
+                            <h3 class="title-undercategory">Indendørs fodbold</h3>
+                                <div class="text-klub">
+                                    <p>Fra uge 43 (31.10.) træner vi hver tirsdag aften fra kl. 20.00 – 23.00 i Alpi Hallerne (hal 2).</p><br>                 
+                                        <p>Så hvis du er interesseret i at spille indendørs fodbold, kontakt sjakbajs:</p>
+                                         <div class="info-card">
+                                                <p>Allan Thomsen</p>                                  
+                                                <p>tlf.: 41 74 16 79</p>
+                                                <p>mail: ath@jysk.dk</p>
+                                            </div>
+                                                                          
+                                </div>
+
                     </div>
-                    <a class="nav-link" href="Lobbyen.html">LOBbyen</a>
-                    <a class="nav-link" href="Arrangementer.html">Arrangementer</a>
-                    <a class="nav-link" href="Galleri.html">Galleri</a>
-                    <a class="nav-link" href="Kontakt.html">KONTAKT</a>
                 </div>
+                      
+        </div>
+    </div>
+</div>
 
-                <div class="col-md-3">
-                    <a class="footertilmelding" href="Tilmeld dig.html">TILMELD DIG</a>
-                    <label for="du er altid velkommen">Du er altid velkommen til at
-                        stikke hovedet ind i
-                        LOBbyen onsdag aften fra kl.
-                        19.30 – 21.30, eller lørdag
-                        mellem kl. 11.00 – 13.00 for at
-                        fornemme klubånden og få
-                        en snak om et medlemskab.</label>
-                </div>
+<!-- AFSLUTNING INDHOLD -->      
 
-                <div class="col-md-3">
-                    <h5 class="SOCIAL">SOCIAL MEDIA</h5>
-                    <a href="https://www.facebook.com/lindoldboys"><img src="img/content/icons/facebook-icon.svg"
-                            alt="Facebook Logo" width="50px" height="50px" /></a>
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="row">
+                <div class="footerlogo">
+                    <a class="logo" href="index.html"><img src="media/LOB-logo.svg" alt="LOB-logo Logo" width="75px" height="75px" /></a>
                 </div>
+        </div>
+   
+        <div class="row">
+            <div class="col-md-3">
+                <h5 class="address">ADDRESSE</h5>
+                <br>
+                <p>Kollundvej 33</p>
+                <p>7400 Herning</p>
+                <p>Klublokale - LOBbyen</p>
+                <P>i kælderen under hal 2</P>
+                <p>ALPI Hallerne.</p>
+            </div>
+            <div class="col-md-3">
+                <h5>BESTYRELSEN</h5>
+                <a class="nav-link" href="generalforsamling.html">Generalforsamling</a>
+                <a class="nav-link" href="vedtaegter.html">Vedtægter</a>
+                <a class="nav-link" href="privatlivspolitik.html">Privatlivspolitik</a>
+            </div>
+            <div class="col-md-3">
+                <h5>LINKS</h5>
+                <a class="nav-link" href="https://lindoldgirls.dk/">LOG - Lind Old Girls</a>
+                <a class="nav-link" href="http://www.lindborger.dk/">Lind Borgerforening</a>
+                <a class="nav-link" href="https://alpihallerne.dk/">ALPI Hallerne</a>
+                <a class="nav-link" href="https://desmaaklinger.dk/">De Små Klinger</a>
+                <a class="nav-link" href="http://klg-lind.dk/">KLG</a>
+            </div>
+            <div class="col-md-3">
+                <h5>MENU</h5>
+                <a class="nav-link" href="">Discipliner</a>
+                <div class="sport">
+                    <a class="nav-link" href="fodbold.html">Fodbold</a>
+                    <a class="nav-link" href="badmington.html">Badminton</a>
+                    <a class="nav-link" href="loeb.html">Løb</a>
+                    <a class="nav-link" href="volleybold.html">Volleyball</a>
+                    <a class="nav-link" href="fitness.html">Fitness</a>
+                </div>
+                <a class="nav-link" href="lobbyen.html">LOBbyen</a>
+                <a class="nav-link" href="arrangementer.html">Arrangementer</a>
+                <a class="nav-link" href="galleri.html">Galleri</a>
+                <a class="nav-link" href="tilmelding.html">Tilmeld dig</a>
+                <a class="nav-link" href="kontakt.html">Kontakt</a>
+            </div>
+
+            <div class="col-md-3">
+                <a class="footertilmelding" href="tilmelding.html">TILMELD DIG</a>
+                <label for="du er altid velkommen">Du er altid velkommen til at
+                    stikke hovedet ind i
+                    LOBbyen onsdag aften fra kl.
+                    19.30 – 21.30, eller lørdag
+                    mellem kl. 11.00 – 13.00 for at
+                    fornemme klubånden og få
+                    en snak om et medlemskab.</label>
+            </div>
+
+            <div class="col-md-3">
+                <h5 class="SOCIAL">SOCIAL MEDIA</h5>
+                <a href="https://www.facebook.com/lindoldboys"><img src="media/facebook-icon.svg"
+                        alt="Facebook Logo" width="50px" height="50px" /></a>
             </div>
         </div>
+    </div>
 
 
-        <!--på ind i <p></p> står vores footer tekst-->
-        <h6>2023 Dette er kun til undervisning brug</h6>
-        <br>
-    </footer>
-    <!--Footer er slut-->
+            <!--på ind i <p></p> står vores footer tekst-->
+            <h6>2023 Dette er kun til undervisning brug</h6>
+            <br>
+</footer>
+<!-- END FOOTER -->
 
-</body>
 
+</body>   
 </html>

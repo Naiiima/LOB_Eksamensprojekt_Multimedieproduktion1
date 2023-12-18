@@ -12,15 +12,11 @@ https://chat.openai.com/share/0db9a9ce-5456-4e02-afcc-97845b4f3c6c */
 
 /* Sørg for, at body og html fylder hele skærmen */
 html, body {
-    height: 100%;
-}
-
-/* Fjern default margin på body */
-body {
+    width: 100%;
+    min-width: 100%;
+    overflow-x: hidden;
     margin: 0;
-    background: url(img/content/Baggrund/shape.png);
-    background-size: cover;
-    background-attachment: fixed;
+    padding: 0;
 }
 
 /* Stil for header-elementet */
@@ -35,7 +31,8 @@ header {
     padding: 0 20px; /* Tilføjer lidt polstring til venstre og højre for indholdet */
 }
 header .logo {
-    margin-right: 600px; /* Tilføj denne regel for at øge margenen til højre af logoet */
+    margin-right: 350px; /* Tilføj denne regel for at øge margenen til højre af logoet */
+    margin-left: 50px;
 }
 header .navbar-toggler {
     margin-left: 350px; /* Tilføj denne regel for at øge margenen til højre af burgermenuknappen */
@@ -66,11 +63,10 @@ header .navbar-toggler {
     font-size: 16px;
 }
 
-
-
 /* Tilpas farven på navbaren */
 nav.navbar {
     background-color: #171d18 !important; /* Baggrundsfarven på navbaren */
+    padding: 20px 0px 20px 0px;
 }
 
 /* Tilpas farven på teksten i navbaren */
@@ -172,27 +168,475 @@ nav a.signup {
     justify-content: space-between;
 }
 
-
-
-
 /* Tilpasninger til navigationselementer */
 nav a {
     margin: 0 10px;
     color: #f9fbf3;
     text-decoration: none;
 }
+/* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY */
+/* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY */
 
 
+/* STYLING AF LANDING PAGE */
+.landing-page {
+    background-image: url('media/spillere-efter-kampen.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    max-width: 100%;
+}
+.club {
+    background-color: rgba(255, 255, 255, 0.85); /* Białe tło z 85% przezroczystości */
+    padding: 60px 60px 80px 60px; /* Padding u góry i u dołu: 20px, padding po lewej i prawej: 5px */
+    color: #171d18; /* Kolor tekstu */
+    text-align: left; /* Wyśrodkuj tekst na środku */
+    margin-left: 80px;
+    margin-right: 80px;
+    max-width: 1000px;
+}
 
-/* CSS for footer-elementet */
+.slogan-text {
+    font-size: 18;
+    font-weight: 700;
+    color: #171D18;
+    padding-left: 20px;
+}
+.cta {
+    margin-top: 60px;
+}
+@media (max-width: 767px) {
+    .club {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .slogan-text {
+        font-size: 16px;
+    }
+
+    .button2 {
+        padding: 15px;
+    }
+}
+
+/* BUTTONS */
+.button2 {
+    background-color: #FCD553;
+    color: #171d18;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 21px;
+    display: inline-block;
+    border: none;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.list {
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: #171D18;
+    color: #F9FBF3;
+    padding: 20px 40px 15px 40px;
+    width: 60%;
+}
+
+/* HEADERS */
+h1, .main-heading {
+    font-size: 64px;
+    font-weight: 800;
+    color: #2E6314;
+}
+
+h2, .title-meld {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #171D18;
+    text-transform: uppercase;
+}
+
+h3, .title, #title-medlem, .title-undercategory {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    color: #171D18;
+}
+
+h4, .title-adresse, .title-lobbyen, .title-hold, .title-group, .title-badmington, .title-loeb, .title-volley, .title-fitness {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #171D18;
+    text-transform: uppercase;
+}
+
+h5, .form-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #171D18;
+}
+
+h6, .categories {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #171D18;
+    text-transform: uppercase;
+}
+
+h7 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    color: #171D18;
+}
+.title-undercategory {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/* END HEADERS */
+
+.focus-text {
+    background-color: #FCD553;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    color: #171D18;
+    max-width: 200px;
+    max-height: 80px;
+    padding: 10px;
+    display: inline-block;
+    letter-spacing: -2.5%;
+    line-height: 2.5;
+}
+.section2 .focus-text {
+    background-color: #FCD553;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    color: #171D18;
+    max-width: 200px;
+    max-height: 40px;
+    padding: 10px;
+    display: inline-block;
+    letter-spacing: -2.5%;
+    line-height: 2.5;
+}
+
+.flex-container .description {
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-align: left;
+    margin: 80px auto;
+    max-width: 800px;
+    display: flex;
+}
+
+.flex-container .sponsors {
+    background-color: #F7F7F7;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: center;
+    flex-direction: row;
+    margin: 20px;
+}
+
+.sponsors img {
+    padding: 10px;
+    width: calc(10% - 60px);
+    margin: 0 10px 15px;
+    object-fit: fill;
+
+}
+
+@media (max-width: 992px)  {
+        .sponsors img {
+            width: calc(100% - 20px);
+        }
+        .flex-container .sponsors {
+            flex-direction: column;
+            padding-top: 10px;
+        }
+}
+@media (max-width: 767px) {
+    .sponsors img {
+        width: calc(50% - 80px);
+    }
+    .flex-container .sponsors {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .section1 {
+        flex-direction: column;
+        margin-left: 20px;
+        padding: 20px; 
+    }
+
+    .flex-column {
+        width: 100%; /* Ustaw szerokość 100% dla mniejszych ekranów */
+    }
+}
+
+@media (max-width: 767px) {
+    .section2 {
+        flex-direction: column;
+        margin-left: 10px;
+        padding: 10px; /* Zmiana kierunku flex dla mniejszych ekranów */
+    }
+
+    .flex-column {
+        width: 100%; /* Ustaw szerokość 100% dla mniejszych ekranów */
+    }
+}
+
+@media (max-width: 767px) {
+    .section3 {
+        flex-direction: column;
+        width: 100%;
+    }
+    .list ul {
+       width: 100%;
+    }
+
+    .list {
+        padding: 0 20px;
+        padding-top: 20px;
+        width: 80%;
+
+    }
+    .flex-column {
+        width: 100%; /* Ustaw szerokość 100% dla mniejszych ekranów */
+        margin-left: 20px;
+        padding: 20px;
+    }
+}
+
+.section1 {
+    background-image: url(media/shape.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    width: 100%;
+}
+
+.section1 {
+padding: 20px;
+}
+
+.section1 .flex-column {
+    margin-left: 20px;
+}
+
+.section1 img {
+    padding: 30px;
+    max-width: 560px;
+    height: auto;
+    width: 100%;
+}
+
+.section2 {
+    padding: 20px;
+}
+
+.section2 .flex-column {
+    margin-left: 20px;
+}
+
+.section2 {
+    background-image: url(media/shape2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    width: 100%;
+}
+
+.section2 img {
+    padding: 30px;
+    max-width: 560px;
+    height: auto;
+    width: 100%;
+}
+
+.section3 {
+    padding: 40px;
+    border-style: dashed;
+}
+
+/* BREADCRUMBS */
+.breadcrumb {
+font-family: 'Montserrat', sans-serif;
+font-size: 16px;
+font-weight: 400;
+color: #171D18;
+text-transform: uppercase;
+}
+.breadcrumb-item a {
+    color: #B4B4B4
+}
+.breadcrumb-item.active {
+    color: #171D18;
+}
+
+/* TILMELDING.HTML */
+.tilmelding .flex-container {
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 767px) {
+    .tilmelding .flex-container {
+        margin: 30px 5px 5px 20px;
+        display: flex;
+        flex-direction: row;
+    }
+    .list2 ul {
+        padding-right: 5px;
+        margin-bottom: 10px; /* Dodaj odstęp pomiędzy elementami listy */
+    }
+
+    .boxes {
+        padding-left: 8px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border: solid 0.5px;
+        max-width: 400px;
+    }
+}
+
+.list2 {
+    margin-right: 40px;
+    color: #171D18;
+    padding-right: 60px;
+    max-width: 600px;
+}
+
+#form {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.boxes {
+    padding-left: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: solid 0.5px;
+}
+
+.checkbox-label {
+    display: flex; 
+    align-items: center; 
+    margin-left: 20px;
+}
+
+.item input {
+    margin-right: 10px; /* Dostosuj wartość marginesu po prawej stronie według potrzeb */
+}
+
+.item {
+    display: flex; 
+    max-width: 600px;
+    align-items: baseline;
+}
+
+/* END TILMELDING.HTML */
+
+/* GALLERY STYLING - fotos: own, club´s */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img {
+    width: calc(33.33% - 60px);
+    margin: 0 10px 15px;
+    height: 50%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .gallery img {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 992px) {
+    .gallery img {
+        width: calc(50% - 20px);
+    }
+}
+
+/* BACKGROUND-UNDERSIDER */
+.generalforsamling .content, .arrangementer .content, .vedtaegter .content, .privatlivspolitik .content, .tilmelding .content, .kontakt .content, .lobbyen .content, .galleri .content, .fodbold .content, .badmington .content, .loeb .content, .volleybold .content, .fitness .content {
+    background-image: url(media/shape.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 100px;
+}
+
+/* KONTAKT.HTML */
+.kontakt .text-bestyrelsesmedlemmerne, .lobbyen .text-klub, .fodbold .text-klub, .fodbold p, .badmington .text-klub, .loeb .text-klub, .volleybold .text-klub, .fitness .text-klub {
+    text-align: left;
+    display: inline-block; /* Dodaje automatyczne wyśrodkowanie na osi poziomej */
+    max-width: 600px;
+}
+
+.title-hold {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container-hold {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.column-hold {
+  flex: content;
+  margin: 0 10px; 
+  flex-direction: column;
+}
+
+.info-card {
+    text-align: left;
+    max-width: 1200px;
+}
+
+/* END KONTAKT.HTML */
+
+/* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER *//* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */
+/* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */
 
 footer {
-    margin-top: 50px;
     background-color: #171d18;
     color: white;
 }
 footer .container {
-    padding-top: 20px;
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
 }
 
 /* Juster logoets position i footer */
@@ -205,10 +649,10 @@ footer .col-md-3 {
     text-align: left;
 }
 footer p{
-    line-height: 10px;
+    line-height: 20px;
 }
 footer a{
-    line-height: 50px;
+    line-height: 40px;
 }
 
 footer .footertilmelding {
@@ -285,14 +729,24 @@ footer h6 {
     }
 
     /* Tilpas linjeafstanden mellem footer-elementerne på små skærme */
-    footer {
-        margin-top: 20px; /* Juster denne værdi efter behov */
+    @media (max-width: 768px) {
+        footer .container {
+            justify-content: space-evenly;
+            flex-direction: column;
+            margin-left: 40px;
+        }
     }
-    footer .container {
-        margin-top: 20px; /* Juster denne værdi efter behov */
+    @media (max-width: 992px) {
+        footer .container {
+            justify-content: space-evenly;
+            flex-direction: column;
+            margin-left: 40px;
+        }
     }
+    
     footer .row {
         margin-top: 20px; /* Juster denne værdi efter behov */
+    
     }
     footer .col-md-3 {
         margin-bottom: 20px; /* Juster denne værdi efter behov */
@@ -323,133 +777,4 @@ footer h6 {
     footer label {
         white-space: pre-line; /* Beholder linjeskift i teksten */
     }
-/* CSS for siden "Sitet" */
-.breadcrumb {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: #171D18;
-    text-transform: uppercase;
-    }
-    .breadcrumb-item a {
-        color: #B4B4B4
-    }
-    .breadcrumb-item.active {
-        color: #171D18;
-    }
-/* CSS for siden "DICIPLINER" */
 
-.overskrift {
-    font-weight: bold;
-    font-size: 48px;
-    text-align: center;
-    padding-bottom: 20px;
-    margin-top: 50px;
-}
-.u-overskrift {
-    text-align: center;
-    font-weight: bolder;
-    font-size: 36px;
-    padding-bottom: 50px;
-    padding-top: 50px;
-    margin-top: -20px;
-}
-.su-overskrift {
-    max-width: 500px; /* Juster bredden efter behov */
-    margin: 0 auto; /* Center tekstblok vandret */
-    padding: 20px; /* Tilføj indrykning eller afstand efter behov */
-    text-align: left; /* Venstrestil teksten */
-    font-weight: 200;
-}
-
-/* CSS for siden "Fodbold" */
-
-.fodboldp {
-    max-width: 500px; /* Juster bredden efter behov */
-    margin: 0 auto; /* Center tekstblok vandret */
-    padding: 20px; /* Tilføj indrykning eller afstand efter behov */
-    text-align: left; /* Venstrestil teksten */
-}
-.fodbold-container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.fodbold-col-6 {
-    width: 50%;
-    max-width: 500px; /* Juster bredden efter behov */
-    margin: 0 auto; /* Center tekstblok vandret */
-    padding: 20px; /* Tilføj indrykning eller afstand efter behov */
-    text-align: left; /* Venstrestil teksten */
-}
-
-.col-6 {
-    width: 48%; /* Adjust as needed */
-}
-.OLDBOYSFODBOLD {
-    max-width: 500px; /* Juster bredden efter behov */
-    margin: 0 auto; /* Center tekstblok vandret */
-    padding: 20px; /* Tilføj indrykning eller afstand efter behov */
-    text-align: left; /* Venstrestil teksten */
-}
-
-
-/* CSS for siden "Badminton" */
-
-.BADMINTONInfo-om-bold {
-    max-width: 500px; /* Juster bredden efter behov */
-    margin: 0 auto; /* Center tekstblok vandret */
-    padding: 20px; /* Tilføj indrykning eller afstand efter behov */
-    text-align: left; /* Venstrestil teksten */
-    padding-bottom: 100px;
-}
-
-.BADMINTONp {
-    max-width: 500px; /* Juster bredden efter behov */
-    margin: 0 auto; /* Center tekstblok vandret */
-    padding: 20px; /* Tilføj indrykning eller afstand efter behov */
-    text-align: left; /* Venstrestil teksten */
-}
-
-/* CSS for siden "Fitness" */
-
-.FitnessInfo-om-bold {
-    max-width: 500px; /* Juster bredden efter behov */
-    margin: 0 auto; /* Center tekstblok vandret */
-    padding: 20px; /* Tilføj indrykning eller afstand efter behov */
-    text-align: left; /* Venstrestil teksten */
-    padding-bottom: 100px;
-}
-.Fitnessp {
-    max-width: 500px; /* Juster bredden efter behov */
-    margin: 0 auto; /* Center tekstblok vandret */
-    padding: 20px; /* Tilføj indrykning eller afstand efter behov */
-    text-align: left; /* Venstrestil teksten */
-}
-.FitnesspBreak {
-    max-width: 500px; /* Juster bredden efter behov */
-    margin: 0 auto; /* Center tekstblok vandret */
-    padding: 20px; /* Tilføj indrykning eller afstand efter behov */
-    text-align: left; /* Venstrestil teksten */
-}
-/* CSS for siden "LØB" */
-.LOBp {
-    max-width: 500px; /* Juster bredden efter behov */
-    margin: 0 auto; /* Center tekstblok vandret */
-    padding: 20px; /* Tilføj indrykning eller afstand efter behov */
-    text-align: left; /* Venstrestil teksten */
-}
-
-.LOBpmargintop {
-    max-width: 500px; /* Juster bredden efter behov */
-    margin: 0 auto; /* Center tekstblok vandret */
-    padding: 20px; /* Tilføj indrykning eller afstand efter behov */
-    text-align: left; /* Venstrestil teksten */
-}
-/* CSS for siden "Volleyball" */
-.vollyp {
-    max-width: 500px; /* Juster bredden efter behov */
-    margin: 0 auto; /* Center tekstblok vandret */
-    padding: 20px; /* Tilføj indrykning eller afstand efter behov */
-    text-align: left; /* Venstrestil teksten */
-}
