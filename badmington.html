@@ -1,41 +1,48 @@
 <!DOCTYPE html>
-<html lang="da">
+<html lang="da"> <!-- giving  a language code to our website -->
+
 <head>
     <meta name="robots" content="noindex">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <title>LIND OLD BOYS - badmington</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"> <!-- CSS file path -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>LIND OLD BOYS - badmington</title> <!-- page title that appears in the browser -->
     <link rel="icon" href="media/lob-favicon.svg" type="image/svg+xml" sizes="any">
 </head>
 
 
 <!-- Bootstrap JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
 
 <body class="badmington">
+    <!-- Our Header starts here -->
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-            <a class="logo" href="index.html"><img src="media/LOB-logo.svg" alt="LOB-logo Logo" width="75px" height="75px"/></a>
+            <a class="logo" href="index.html"><img src="media/LOB-logo.svg" alt="LOB-logo Logo" width="75px"
+                    height="75px" /></a>
             <div class="container-fluid">
 
-                <!-- Burgermenu på små skærme -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- Here we set up at Burgermenu when the event "Collapse" happens (Small screens) -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 
-                    <!-- brugerdefinerede Burgermenu ikon -->
+                    <!-- The icon for a Brugermenu is Black with transparent background in Bootstrap. Our side is also black so we had to implement our own Burgermenu icon -->
                     <img src="media/burger-menu-1.svg" alt="Burger Menu" width="40" height="40" />
                 </button>
                 <div class="navbar-collapse collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-                        <!-- Dropdown-menu -->
+                        <!-- On of our "Tabs" is called "Discipliner". This Tab is a Dropdown menu - We also use a Javascript to make this part poseble -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
                                 DISCIPLINER
                             </a>
 
-                            <!-- Links i dropdownmanuen -->
+                            <!-- Links in our Dropdown menu (Discipliner) -->
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="fodbold.html">Fodbold</a></li>
                                 <li><a class="dropdown-item" href="badmington.html">Badminton</a></li>
@@ -45,8 +52,8 @@
                             </ul>
                         </li>
 
-                        <!-- De andre links i navbaren -->
-                    </li>
+                        <!-- We also have regular Links in our Header those can be seen here. -->
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="lobbyen.html">LOBBYEN</a>
                         </li>
@@ -68,138 +75,172 @@
         </nav>
     </header>
 
- <!-- INDHOLD -->
- <div class="container-fluid content">
-    <div class="container mx-auto">
-        <div class="row">
+    <!-- CONTENT -->
+    <!-- A fluid container with the mx auto class -->
+    <div class="container-fluid content">
+        <div class="container mx-auto">
+            <div class="row">
 
-            <div class="col-md-12 text-left mt-5">
-                <nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">LOB</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Badmington</li>
-                    </ol>
-                </nav>
-            </div>
+                <!-- A breadcrumb (Link that links back to Index.html) -->
+                <div class="col-md-12 text-left mt-5">
+                    <nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">LOB</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Badmington</li>
+                        </ol>
+                    </nav>
+                </div>
 
-            <div class="col-md-12 text-center mb-5">
-                <div class="intro text-center">
-                    <h2 class="title">Discipliner</h2>
-                    <h3 class="title-undercategory">Badmington</h3>
+                <div class="col-md-12 text-center mb-5">
+                    <!-- Full width column for medium screens (md), centers text on the page, with a bottom margin of 5 in the Bootstrap class -->
+                    <div class="intro text-center">
+                        <h2 class="title">Discipliner</h2>
+                        <h3 class="title-undercategory">Badmington</h3>
 
-                            <div class="text-klub">
-                                <p>I LOB kan du også spille badminton.
-                                    Vi har i sæsonen følgende baner til rådighed: </p><br>
+                        <div class="text-klub">
+                            <p>I LOB kan du også spille badminton.
+                                Vi har i sæsonen følgende baner til rådighed: </p><br>
 
 
-                                    <h4 class="title-badmington">Højgårdskolen:</h4>
-                                        <p>i perioden 1.10. – 31.3. – mandag fra kl. 19.00 – 21.00</p>
+                            <h4 class="title-badmington">Højgårdskolen:</h4>
+                            <p>i perioden 1.10. – 31.3. – mandag fra kl. 19.00 – 21.00</p>
 
-                                    <h4 class="title-badmington">Sjakbajs:</h4>
-                                    <div class="info-card">
-                                        <p>Bent Christensen, Fejerskovparken 126, Lind 7400 Herning</p>
-                                            <p>tlf. 21 58 41 72</p>
-                                           <p> mail: btc1950@hotmail.com </p>
-</div>
-                                    <h4 class="title-badmington">Badminton i ALPI Hallerne:</h4>
-                                        <p>Tirsdag fra kl.21.00-22.00</p>
+                            <h4 class="title-badmington">Sjakbajs:</h4>
+                            <div class="info-card">
+                                <p>Bent Christensen, Fejerskovparken 126, Lind 7400 Herning</p>
+                                <p>tlf. 21 58 41 72</p>
+                                <p> mail: btc1950@hotmail.com </p>
+                            </div>
+                            <h4 class="title-badmington">Badminton i ALPI Hallerne:</h4>
+                            <p>Tirsdag fra kl.21.00-22.00</p>
 
-                                    <h4 class="title-badmington">Sjakbajs:</h4>
-                                    <div class="info-card">
-                                            <p>Leif Holbæk</p>
-                                            <p>tlf. 26 78 23 52</p>
-                                            <p>mail: leifholmbaek.1@gmail.com</p> 
-                                            <p>og</p> 
-                                            <p>Jørgen Eybyej</p> 
-                                            <p>tlf. 22 78 77 35</p>
-                                            <p>mail: beybye@gmail.com</p>
-</div>
-                                </div>
+                            <h4 class="title-badmington">Sjakbajs:</h4>
+                            <div class="info-card">
+                                <p>Leif Holbæk</p>
+                                <p>tlf. 26 78 23 52</p>
+                                <p>mail: leifholmbaek.1@gmail.com</p>
+                                <p>og</p>
+                                <p>Jørgen Eybyej</p>
+                                <p>tlf. 22 78 77 35</p>
+                                <p>mail: beybye@gmail.com</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                      
+
+            </div>
         </div>
     </div>
-</div>
 
-<!-- AFSLUTNING INDHOLD -->      
+    <!-- END CONTENT -->
 
-<!-- FOOTER -->
-<footer>
-    <div class="container">
-        <div class="row">
+    <!-- Our Footer starts here -->
+    <footer>
+
+        <!-- Our footer starts in with Bootstrap - a Container -->
+        <div class="container">
+
+            <!-- This makes so the content of the div class="container" is set up in rows -->
+            <div class="row">
+
+                <!-- Here we place a logo in out Footer, the logo is also a home button -->
                 <div class="footerlogo">
-                    <a class="logo" href="index.html"><img src="media/LOB-logo.svg" alt="LOB-logo Logo" width="75px" height="75px" /></a>
+                    <a class="logo" href="index.html"><img src="media/LOB-logo.svg" alt="LOB-logo Logo" width="75px"
+                            height="75px" /></a>
                 </div>
-        </div>
-   
-        <div class="row">
-            <div class="col-md-3">
-                <h5 class="address">ADDRESSE</h5>
-                <br>
-                <p>Kollundvej 33</p>
-                <p>7400 Herning</p>
-                <p>Klublokale - LOBbyen</p>
-                <P>i kælderen under hal 2</P>
-                <p>ALPI Hallerne.</p>
             </div>
-            <div class="col-md-3">
-                <h5>BESTYRELSEN</h5>
-                <a class="nav-link" href="generalforsamling.html">Generalforsamling</a>
-                <a class="nav-link" href="vedtaegter.html">Vedtægter</a>
-                <a class="nav-link" href="privatlivspolitik.html">Privatlivspolitik</a>
-            </div>
-            <div class="col-md-3">
-                <h5>LINKS</h5>
-                <a class="nav-link" href="https://lindoldgirls.dk/">LOG - Lind Old Girls</a>
-                <a class="nav-link" href="http://www.lindborger.dk/">Lind Borgerforening</a>
-                <a class="nav-link" href="https://alpihallerne.dk/">ALPI Hallerne</a>
-                <a class="nav-link" href="https://desmaaklinger.dk/">De Små Klinger</a>
-                <a class="nav-link" href="http://klg-lind.dk/">KLG</a>
-            </div>
-            <div class="col-md-3">
-                <h5>MENU</h5>
-                <a class="nav-link" href="">Discipliner</a>
-                <div class="sport">
-                    <a class="nav-link" href="fodbold.html">Fodbold</a>
-                    <a class="nav-link" href="badmington.html">Badminton</a>
-                    <a class="nav-link" href="loeb.html">Løb</a>
-                    <a class="nav-link" href="volleybold.html">Volleyball</a>
-                    <a class="nav-link" href="fitness.html">Fitness</a>
+
+            <!-- We have placed this part in a row too -->
+            <div class="row">
+
+                <!-- Here we uses the "col-md-3" Bootstrap class. "col-md-3" is a class from Bootstraps pre-defined grid system also known as "colomns" -->
+                <div class="col-md-3">
+
+                    <!-- Here we have the section for "ADDRESSE" -->
+                    <h5 class="address">ADDRESSE</h5>
+                    <br>
+                    <p>Kollundvej 33</p>
+                    <p>7400 Herning</p>
+                    <p>Klublokale - LOBbyen</p>
+                    <P>i kælderen under hal 2</P>
+                    <p>ALPI Hallerne.</p>
                 </div>
-                <a class="nav-link" href="lobbyen.html">LOBbyen</a>
-                <a class="nav-link" href="arrangementer.html">Arrangementer</a>
-                <a class="nav-link" href="galleri.html">Galleri</a>
-                <a class="nav-link" href="tilmelding.html">Tilmeld dig</a>
-                <a class="nav-link" href="kontakt.html">Kontakt</a>
-            </div>
+                <div class="col-md-3">
 
-            <div class="col-md-3">
-                <a class="footertilmelding" href="tilmelding.html">TILMELD DIG</a>
-                <label for="du er altid velkommen">Du er altid velkommen til at
-                    stikke hovedet ind i
-                    LOBbyen onsdag aften fra kl.
-                    19.30 – 21.30, eller lørdag
-                    mellem kl. 11.00 – 13.00 for at
-                    fornemme klubånden og få
-                    en snak om et medlemskab.</label>
-            </div>
+                    <!-- Here we have the section for "BESTYRELSEN" -->
+                    <h5>BESTYRELSEN</h5>
+                    <a class="nav-link" href="generalforsamling.html">Generalforsamling</a>
+                    <a class="nav-link" href="vedtaegter.html">Vedtægter</a>
+                    <a class="nav-link" href="privatlivspolitik.html">Privatlivspolitik</a>
+                </div>
+                <div class="col-md-3">
 
-            <div class="col-md-3">
-                <h5 class="SOCIAL">SOCIAL MEDIA</h5>
-                <a href="https://www.facebook.com/lindoldboys"><img src="media/facebook-icon.svg"
-                        alt="Facebook Logo" width="50px" height="50px" /></a>
+                    <!-- Here we have the section for "EXTERN LINKS" -->
+                    <h5>LINKS</h5>
+                    <a class="nav-link" href="https://lindoldgirls.dk/">LOG - Lind Old Girls</a>
+                    <a class="nav-link" href="http://www.lindborger.dk/">Lind Borgerforening</a>
+                    <a class="nav-link" href="https://alpihallerne.dk/">ALPI Hallerne</a>
+                    <a class="nav-link" href="https://desmaaklinger.dk/">De Små Klinger</a>
+                    <a class="nav-link" href="http://klg-lind.dk/">KLG</a>
+                </div>
+                <div class="col-md-3">
+
+                    <!-- Here we have the section for "MENU" -->
+                    <h5>MENU</h5>
+
+                    <!-- In our footer we also link to out Discipliner undersites -->
+                    <a class="nav-link" href="">Discipliner</a>
+
+                    <!-- The class "sport" is so we could with CSS Margin them -->
+                    <div class="sport">
+                        <a class="nav-link" href="fodbold.html">Fodbold</a>
+                        <a class="nav-link" href="badmington.html">Badminton</a>
+                        <a class="nav-link" href="loeb.html">Løb</a>
+                        <a class="nav-link" href="volleybold.html">Volleyball</a>
+                        <a class="nav-link" href="fitness.html">Fitness</a>
+                    </div>
+
+                    <!-- Here we have the other links from the header -->
+                    <a class="nav-link" href="lobbyen.html">LOBbyen</a>
+                    <a class="nav-link" href="arrangementer.html">Arrangementer</a>
+                    <a class="nav-link" href="galleri.html">Galleri</a>
+                    <a class="nav-link" href="tilmelding.html">Tilmeld dig</a>
+                    <a class="nav-link" href="kontakt.html">Kontakt</a>
+                </div>
+
+                <div class="col-md-3">
+
+                    <!-- Here we have the section for "Tilmeld dig" button in the footer -->
+                    <a class="footertilmelding" href="tilmelding.html">TILMELD DIG</a>
+
+                    <!-- This is the text field just under the button -->
+                    <label for="du er altid velkommen">Du er altid velkommen til at
+                        stikke hovedet ind i
+                        LOBbyen onsdag aften fra kl.
+                        19.30 – 21.30, eller lørdag
+                        mellem kl. 11.00 – 13.00 for at
+                        fornemme klubånden og få
+                        en snak om et medlemskab.</label>
+                </div>
+
+                <div class="col-md-3">
+
+                    <!-- This is a link to there officiel facebook group -->
+                    <h5 class="SOCIAL">SOCIAL MEDIA</h5>
+                    <a href="https://www.facebook.com/lindoldboys"><img src="media/facebook-icon.svg"
+                            alt="Facebook Logo" width="50px" height="50px" /></a>
+                </div>
             </div>
         </div>
-    </div>
 
 
-            <!--på ind i <p></p> står vores footer tekst-->
-            <h6>2023 Dette er kun til undervisning brug</h6>
-            <br>
-</footer>
-<!-- END FOOTER -->
+        <!-- Out required "Dette er kun til undervisnings brug mark!" -->
+        <h6>2023 Dette er kun til undervisning brug</h6>
+        <br>
+    </footer>
+    <!-- END FOOTER -->
 
 
-</body>   
+</body>
+
 </html>

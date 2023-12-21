@@ -1,203 +1,188 @@
-/* Denne fil er redigeret af ChatGPT 
+/* Links from ChatGPT
 https://chat.openai.com/share/0db9a9ce-5456-4e02-afcc-97845b4f3c6c */
 
+/* This line @import are importing our google font Montserret */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
-/* Nulstil margin og padding, og sæt font-family */
+/* We use the * to refer to the whole site.
+This part resets some standard settings that HTML and CSS uses. */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* A CSS style element, that includes the sizes of the boxes on out website */
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Sørg for, at body og html fylder hele skærmen */
+/* Displays the site in fullscreen (Removes the white boarder around the site) */
 html, body {
     width: 100%;
-    min-width: 100%;
     overflow-x: hidden;
-    margin: 0;
-    padding: 0;
 }
 
-/* Stil for header-elementet */
 header {
     background-color: #171d18;
     width: 100%;
-    height: 100px; /* Juster efter behov */
-    color: #f9fbf3; /* Tekstfarve til kontrast */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px; /* Tilføjer lidt polstring til venstre og højre for indholdet */
+    height: 100px; 
+    color: #f9fbf3; 
+    display: flex; /* Makes so the container is flexable, which means that the properties is flexable */
+    align-items: center; /* Makes so items (navbar) is in center */
+    justify-content: space-between; /* Its how the items is aligned in the header (space-between makes space between the items*/
+    padding: 0 20px; 
 }
 header .logo {
-    margin-right: 350px; /* Tilføj denne regel for at øge margenen til højre af logoet */
+    margin-right: 350px; 
     margin-left: 50px;
 }
 header .navbar-toggler {
-    margin-left: 350px; /* Tilføj denne regel for at øge margenen til højre af burgermenuknappen */
-    margin-top: -90px; /* Tilføj denne regel for at justere margenen opad for burgermenuknappen */
-    padding-top: 5px; /* Tilføj denne regel for at justere paddingen opad for burgermenuknappen */
+    margin-left: 200px; 
+    margin-top: -90px; /* The minus means it is reverse, so it instead of expanding it will retract the margin*/
+    padding-top: 5px; 
 }
 
 .navbar-nav li.nav-item:hover a {
-    color: #FCD553 ; /* Tekstfarven ved hover */
-}
-/* For almindelige links i dropdown-menuen */
-.navbar-nav li.nav-item .dropdown-menu a {
-    color: #f9fbf3 ; /* Standard tekstfarve */
+    color: #FCD553 ; 
 }
 
-/* Ved hover på toppeniveau-linket */
-.navbar-nav li.nav-item.dropdown:hover > a {
-    color: #FCD553 ; /* Tekstfarven ved hover på toppeniveau-linket */
+/* changes for the list in the dropdown */
+.navbar-nav li.nav-item .dropdown-menu a {
+    color: #f9fbf3 ; 
 }
-/* Ændre farven for teksten i dropdown-menuen ved hover */
+/* Dropdown menu - hovereffect */
+.navbar-nav li.nav-item.dropdown:hover > a {
+    color: #FCD553 ;  /* changes the links that are direct children to dropdown menu*/
+}
+/* Changes the color to hover with black when marked  */
 .navbar-nav li.nav-item.dropdown:hover .dropdown-menu a:hover {
-    color: #171d18 !important; /* Tekstfarven ved hover for links i dropdown-menuen */
+    color: #171d18 !important; /* importent overrules all CSS */
 }
 
 .navbar-nav .nav-item {
-    margin-right: 20px; /* Juster margenen efter behov */
+    margin-right: 20px; 
     margin-top: 8px;
     font-size: 16px;
 }
 
-/* Tilpas farven på navbaren */
 nav.navbar {
-    background-color: #171d18 !important; /* Baggrundsfarven på navbaren */
+    background-color: #171d18 !important; 
     padding: 20px 0px 20px 0px;
 }
 
-/* Tilpas farven på teksten i navbaren */
 nav.navbar a {
-    color: #f9fbf3; /* Farven på teksten i navbaren */
+    color: #f9fbf3; 
 }
 
-/* Juster padding til venstre for at give plads til logoet */
+/* Padding between logo and navbar */
 nav {
-    padding-left: 20px; /* Juster efter behov */
+    padding-left: 20px; 
 }
 
-/* Tilpasninger til logo og navigation */
 nav {
-    display: flex;
-    font-weight: bold; /* Gør skriften fed */
+    display: flex; /* Converts nav to a flex-contaigner wich it the reason why we can use Justify content on it */
+    font-weight: bold; 
     font-size: 16px;
-    justify-content: flex-start;
+    justify-content: flex-start; /* flex start so the object starts in left top og the screen */
     align-items: right;
 }
 
-/* Tilpasninger til navigationselementer */
 nav a {
-    margin-top: 1000px;
+    margin: 0 10px;
     color: #f9fbf3;
-    text-decoration: none;
+    text-decoration: none; /* Removes underline in links from bootstrap */
 }
-nav a.hover{
+
+nav a.hover {
     color: yellow;
 }
 
-/* Fjern hover-effekten for farven på navigationselementerne */
 .dropdown-menu :hover {
-    text-decoration: none; /* Fjern understregning ved hover */
+    text-decoration: none; 
 }
 
-/* Tilpas farven på Tilmeld Dig-linket */
+/* Our "Tilmeld dig" button in the nav bar */
 nav a.signup {
-    background-color: #f9fbf3; /* Hvid baggrundsfarve */
+    background-color: #f9fbf3; 
     padding: 15px;
-    color: #171d18; /* Tekstfarve */
+    color: #171d18; 
     text-decoration: none;
-    display: flex; /* Aktiverer Flexbox */
-    align-items: center; /* Centrer lodret */
-    justify-content: center; /* Centrer vandret */
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
     width: 150px;
     
 }
-/* Tilpas farven på dropdown-menu */
+
 .dropdown-menu {
     max-height: 200px;
-    z-index: 1000;
-    width: auto; /* eller en bestemt bredde efter behov */
-    max-width: none; /* eller en bestemt maksimal bredde efter behov */
-    position: absolute;
+    z-index: 1000; /* is a CSS property that defines the order of overlapping HTML elements. */
+    width: auto; 
+    max-width: none; 
+    position: absolute; /* positions nearst its parrent element */
 }
-/* Fælles regler for både normal og hover tilstand */
+/* Common rules for both normal and hover mode */
 .navbar-nav li.nav-item.dropdown .dropdown-menu {
-    background-color: #171d18; /* Tilpas baggrundsfarven efter behov */
-    min-height: auto; /* Gør min-height auto, så den tilpasses indholdet */
-    padding: 10px; /* Juster padding efter behov for at øge højden omkring linksene */
+    background-color: #171d18; 
+    min-height: auto; /* Make min-height auto so it fits the content */
+    padding: 10px; 
     max-height: none; /* Overrule max-height */
 }
 
-/* Tilføj position: static; til linksene inden for dropdown-menuen */
+/* Places all links in static whitch means it places an element in the normal document flow  */
 .navbar-nav li.nav-item.dropdown .dropdown-menu a {
     position: static;
-    line-height: 30px; /* Ændrer line-height for teksten i dropdown-menuen */
-    color: #f9fbf3; /* Standard tekstfarve */
+    line-height: 30px; /* line-height for the text in dropdown-menu */
+    color: #f9fbf3; 
     display: block;
     padding: 10px;
 }
 
-/* Ved hover på dropdown-menuen */
 .navbar-nav li.nav-item.dropdown:hover .dropdown-menu a {
-    color: #f9fbf3; /* Tekstfarven ved hover for links i dropdown-menuen */
+    color: #f9fbf3; 
 }
 
-/* Tilpas farven på dropdown-menu-indhold */
 .dropdown-menu a {
-    color: #f9fbf3; /* Farven på teksten i dropdown-menu */
+    color: #f9fbf3; 
     font-weight: bold;
     margin: 0;
     padding: 0;
-    padding-left: 10px; /* Tilføj padding til venstre (juster efter behov) */
+    padding-left: 10px; 
 }
 
-/* Fjern hover-effekten for farven på dropdown-menu-indholdet */
 .dropdown-menu a:hover {
-    color: inherit; /* Behold samme farve ved hover */
-    text-decoration: none; /* Fjern understregning ved hover */
+    color: inherit; /* causes the element to take the computed value of the property from its parent element. */
+    text-decoration: none; 
     margin: 0;
     padding: 0;
-    padding-left: 10px; /* Tilføj padding til venstre ved hover (juster efter behov) */
+    padding-left: 10px; 
 }
-
+/* Fluid container - expanding the content in bootstrap */
 .container-fluid {
     display: flex;
     justify-content: space-between;
 }
 
-/* Tilpasninger til navigationselementer */
-nav a {
-    margin: 0 10px;
-    color: #f9fbf3;
-    text-decoration: none;
-}
+
 /* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY */
 /* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY *//* BODY */
 
 
 /* STYLING AF LANDING PAGE */
 .landing-page {
-    background-image: url('media/spillere-efter-kampen.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
+    background-image: url('media/spillere-efter-kampen.webp'); /* Our photo as a background */
+    background-size: cover; /* Fill all screen */
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh; /* viewport height */
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;
-    align-items: left;
+    flex-direction: column; /* sets how flex items are placed in the flex container defining the main axis and the direction */
     justify-content: center;
     max-width: 100%;
 }
 .club {
-    background-color: rgba(255, 255, 255, 0.85); /* Białe tło z 85% przezroczystości */
-    padding: 60px 60px 80px 60px; /* Padding u góry i u dołu: 20px, padding po lewej i prawej: 5px */
-    color: #171d18; /* Kolor tekstu */
-    text-align: left; /* Wyśrodkuj tekst na środku */
+    background-color: rgba(255, 255, 255, 0.85); /* white background with 85% transparency */
+    padding: 60px 60px 80px 60px; 
+    color: #171d18; 
+    text-align: left; 
     margin-left: 80px;
     margin-right: 80px;
     max-width: 1000px;
@@ -205,13 +190,14 @@ nav a {
 
 .slogan-text {
     font-size: 18;
-    font-weight: 700;
+    font-weight: 700; /* bold text */
     color: #171D18;
     padding-left: 20px;
 }
 .cta {
     margin-top: 60px;
 }
+/* rule set for small screens  */
 @media (max-width: 767px) {
     .club {
         margin-left: 20px;
@@ -227,15 +213,15 @@ nav a {
     }
 }
 
-/* BUTTONS */
+/* BUTTONS STYLING */
 .button2 {
     background-color: #FCD553;
     color: #171d18;
     font-size: 16px;
     font-weight: 700;
     padding: 21px;
-    display: inline-block;
-    border: none;
+    display: inline-block; /* button is inline element, and inline-block value allows to set a widt and heigt on it */
+    border: none; /* removes border around the button  */
     text-decoration: none;
     margin-top: 10px;
 }
@@ -253,13 +239,20 @@ nav a {
     width: 60%;
 }
 
-/* HEADERS */
-h1, .main-heading {
+/* HEADERS STYLING */
+/* our main header styling */
+h1, .main-heading { 
     font-size: 64px;
     font-weight: 800;
     color: #2E6314;
 }
-
+/* our main header styling on mobile */
+@media (max-width: 767px) {
+    .main-heading {
+        font-size: 48px;
+    }
+}
+/* our h2 header styling */
 h2, .title-meld {
     font-family: 'Montserrat', sans-serif;
     font-size: 48px;
@@ -267,14 +260,16 @@ h2, .title-meld {
     color: #171D18;
     text-transform: uppercase;
 }
-
+/* our h3 header styling */
 h3, .title, #title-medlem, .title-undercategory {
     font-family: 'Montserrat', sans-serif;
     font-size: 36px;
     font-weight: 800;
     color: #171D18;
+  margin-top: 20px;
+    margin-bottom: 20px;
 }
-
+/* our h4 header styling */
 h4, .title-adresse, .title-lobbyen, .title-hold, .title-group, .title-badmington, .title-loeb, .title-volley, .title-fitness {
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
@@ -282,14 +277,14 @@ h4, .title-adresse, .title-lobbyen, .title-hold, .title-group, .title-badmington
     color: #171D18;
     text-transform: uppercase;
 }
-
+/* our h5 header styling */
 h5, .form-title {
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: #171D18;
 }
-
+/* our h6 header styling */
 h6, .categories {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
@@ -297,31 +292,29 @@ h6, .categories {
     color: #171D18;
     text-transform: uppercase;
 }
-
+/* our h7 header styling */
 h7 {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 800;
     color: #171D18;
 }
-.title-undercategory {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
+
 /* END HEADERS */
 
+/* our focus text styling */
 .focus-text {
     background-color: #FCD553;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     font-weight: 800;
     color: #171D18;
-    max-width: 200px;
+    max-width: 200px; 
     max-height: 80px;
     padding: 10px;
     display: inline-block;
-    letter-spacing: -2.5%;
-    line-height: 2.5;
+    letter-spacing: -2.5%; /* space between letters in words */
+    line-height: 2.5; /* space between the text lines */
 }
 .section2 .focus-text {
     background-color: #FCD553;
@@ -338,10 +331,10 @@ h7 {
 }
 
 .flex-container .description {
-    align-items: center;
-    justify-content: center;
+    align-items: center; 
+    justify-content: center; 
     padding: 10px;
-    text-align: left;
+    text-align: left; /* align text to the left */
     margin: 80px auto;
     max-width: 800px;
     display: flex;
@@ -353,21 +346,20 @@ h7 {
     align-items: center;
     justify-content: left;
     text-align: center;
-    flex-direction: row;
+    flex-direction: row; /* sets direktion to the row */
     margin: 20px;
 }
-
+/*   */
 .sponsors img {
     padding: 10px;
-    width: calc(10% - 60px);
+    width: calc(10% - 60px); /* Set the image width to 10% of the container width minus 60 pixels */
     margin: 0 10px 15px;
-    object-fit: fill;
-
+    object-fit: fill; /* Adapt the image to the dimensions of its container, filling the entire available area */
 }
-
+/* rule set for small screens for sponsors bar */
 @media (max-width: 992px)  {
         .sponsors img {
-            width: calc(100% - 20px);
+            width: calc(100% - 20px); 
         }
         .flex-container .sponsors {
             flex-direction: column;
@@ -383,8 +375,7 @@ h7 {
         padding-top: 10px;
     }
 }
-
-
+/* rule set for small screens for our 3 sections */
 @media (max-width: 767px) {
     .section1 {
         flex-direction: column;
@@ -393,7 +384,7 @@ h7 {
     }
 
     .flex-column {
-        width: 100%; /* Ustaw szerokość 100% dla mniejszych ekranów */
+        width: 100%; 
     }
 }
 
@@ -401,11 +392,11 @@ h7 {
     .section2 {
         flex-direction: column;
         margin-left: 10px;
-        padding: 10px; /* Zmiana kierunku flex dla mniejszych ekranów */
+        padding: 10px;
     }
 
     .flex-column {
-        width: 100%; /* Ustaw szerokość 100% dla mniejszych ekranów */
+        width: 100%; 
     }
 }
 
@@ -425,12 +416,13 @@ h7 {
 
     }
     .flex-column {
-        width: 100%; /* Ustaw szerokość 100% dla mniejszych ekranów */
+        width: 100%; 
         margin-left: 20px;
         padding: 20px;
+      	order: -1; /* changing the order of displaying elements on mobile, so that the category title and text appear first, and then photos - availability */
     }
 }
-
+/* background for our section1 */
 .section1 {
     background-image: url(media/shape.png);
     background-position: center center;
@@ -438,10 +430,7 @@ h7 {
     background-size: cover;
     padding: 10px;
     width: 100%;
-}
-
-.section1 {
-padding: 20px;
+  padding: 20px;
 }
 
 .section1 .flex-column {
@@ -453,10 +442,6 @@ padding: 20px;
     max-width: 560px;
     height: auto;
     width: 100%;
-}
-
-.section2 {
-    padding: 20px;
 }
 
 .section2 .flex-column {
@@ -507,6 +492,7 @@ text-transform: uppercase;
     flex-direction: row;
 }
 
+/* styling for mobile version */
 @media (max-width: 767px) {
     .tilmelding .flex-container {
         margin: 30px 5px 5px 20px;
@@ -515,7 +501,7 @@ text-transform: uppercase;
     }
     .list2 ul {
         padding-right: 5px;
-        margin-bottom: 10px; /* Dodaj odstęp pomiędzy elementami listy */
+        margin-bottom: 10px; 
     }
 
     .boxes {
@@ -538,7 +524,7 @@ text-transform: uppercase;
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
+/* input fields styling */
 .boxes {
     padding-left: 8px;
     padding-top: 8px;
@@ -553,13 +539,12 @@ text-transform: uppercase;
 }
 
 .item input {
-    margin-right: 10px; /* Dostosuj wartość marginesu po prawej stronie według potrzeb */
+    margin-right: 10px; 
 }
 
 .item {
     display: flex; 
     max-width: 600px;
-    align-items: baseline;
 }
 
 /* END TILMELDING.HTML */
@@ -567,17 +552,17 @@ text-transform: uppercase;
 /* GALLERY STYLING - fotos: own, club´s */
 .gallery {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines if needed */
     justify-content: center;
 }
 
 .gallery img {
-    width: calc(33.33% - 60px);
+    width: calc(33.33% - 60px); /* This creates a responsive layout with three items in a row */
     margin: 0 10px 15px;
-    height: 50%;
+    height: 50%; /* This ensures that each item takes up half of the available vertical space */
     object-fit: cover;
 }
-
+/* GALLERY STYLING - for mobile version */
 @media (max-width: 768px) {
     .gallery img {
         width: calc(50% - 20px);
@@ -590,7 +575,7 @@ text-transform: uppercase;
     }
 }
 
-/* BACKGROUND-UNDERSIDER */
+/* BACKGROUND for our undersites - shape */
 .generalforsamling .content, .arrangementer .content, .vedtaegter .content, .privatlivspolitik .content, .tilmelding .content, .kontakt .content, .lobbyen .content, .galleri .content, .fodbold .content, .badmington .content, .loeb .content, .volleybold .content, .fitness .content {
     background-image: url(media/shape.png);
     background-position: center center;
@@ -599,13 +584,13 @@ text-transform: uppercase;
     padding-bottom: 100px;
 }
 
-/* KONTAKT.HTML */
+/*  text styling on undersites */
 .kontakt .text-bestyrelsesmedlemmerne, .lobbyen .text-klub, .fodbold .text-klub, .fodbold p, .badmington .text-klub, .loeb .text-klub, .volleybold .text-klub, .fitness .text-klub {
     text-align: left;
-    display: inline-block; /* Dodaje automatyczne wyśrodkowanie na osi poziomej */
+    display: inline-block; 
     max-width: 600px;
 }
-
+/*  text styling on football.html - columns */
 .title-hold {
     text-align: center;
     margin-top: 20px;
@@ -623,13 +608,11 @@ text-transform: uppercase;
   margin: 0 10px; 
   flex-direction: column;
 }
-
+/*  styling for contact informations */
 .info-card {
     text-align: left;
     max-width: 1200px;
 }
-
-/* END KONTAKT.HTML */
 
 /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER *//* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */
 /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */ /* FOOTER */
@@ -644,22 +627,22 @@ footer .container {
     justify-content: space-between;
 }
 
-/* Juster logoets position i footer */
+/* Styling logos position i footer */
 footer .footerlogo {
     text-align: left;
     padding-bottom: 50px;
 }
-
+/* medium screen styling */
 footer .col-md-3 {
     text-align: left;
 }
-footer p{
+footer p {
     line-height: 20px;
 }
-footer a{
+footer a {
     line-height: 40px;
 }
-
+/* button styling in footer */
 footer .footertilmelding {
     background-color: #FCD553;
     color: #171d18;
@@ -673,12 +656,12 @@ footer .footertilmelding {
 footer .col-md-3 .footertilmelding {
     width: 150px;
 }
-
-footer label{
+/* text under button styling */
+footer label {
     margin-top: 30px;
 }
 
-footer .sport{
+footer .sport {
     margin-left: 50px;
     text-align: left;
 }
@@ -698,42 +681,41 @@ footer h6 {
     text-align: center;
     margin-top: 50px;
 }
-/* Media, der justerer på menuens placering når man klikker på Burgermenuen */
+/* Media that adjusts the position of the menu when you click on the Burger menu */
 @media (max-width: 992px) {
     .navbar-collapse {
         position: absolute;
-        top: 56px; /* Juster denne værdi efter behov for at ændre startpositionen */
+        top: 56px; 
         right: 10px;
         background-color: #171d18;
     }
-    /* Fælles regler for både normal og hover tilstand */
+    /* Common rules for both normal and hover mode */
     .navbar-nav li.nav-item.dropdown .dropdown-menu {
-        background-color: #171d18; /* Tilpas baggrundsfarven efter behov */
-        min-height: auto; /* Gør min-height auto, så den tilpasses indholdet */
-        padding: 10px; /* Juster padding efter behov for at øge højden omkring linksene */
+        background-color: #171d18; 
+        min-height: auto; /* Make min-height auto so it fits the content */
+        padding: 10px; 
         max-height: none; /* Overrule max-height */
     }
 
-    /* Tilføj position: static; til linksene inden for dropdown-menuen */
+    /* Add position: static; to the links within the dropdown menu */
     .navbar-nav li.nav-item.dropdown .dropdown-menu a {
         position: static;
-        line-height: 20px; /* Ændrer line-height for teksten i dropdown-menuen */
-        color: #f9fbf3; /* Standard tekstfarve */
+        line-height: 20px; /* Changes the line-height of the text in the dropdown menu */
+        color: #f9fbf3; 
         display: block;
         padding: 10px;
     }
 
-    /* Ved hover på dropdown-menuen */
     .navbar-nav li.nav-item.dropdown:hover .dropdown-menu a {
-        color: #f9fbf3; /* Tekstfarven ved hover for links i dropdown-menuen */
+        color: #f9fbf3; 
     }
 
-    /* Ændre farven for teksten i dropdown-menuen ved hover */
+
     .navbar-nav li.nav-item.dropdown .dropdown-menu a:hover {
-        color: #FCD553; /* Tekstfarven ved hover for links i dropdown-menuen */
+        color: #FCD553; 
     }
 
-    /* Tilpas linjeafstanden mellem footer-elementerne på små skærme */
+/* Adjust line spacing between footer elements on small screens */
     @media (max-width: 768px) {
         footer .container {
             justify-content: space-evenly;
@@ -750,36 +732,36 @@ footer h6 {
     }
     
     footer .row {
-        margin-top: 20px; /* Juster denne værdi efter behov */
+        margin-top: 20px; 
     
     }
     footer .col-md-3 {
-        margin-bottom: 20px; /* Juster denne værdi efter behov */
+        margin-bottom: 20px; 
     }
     footer h6 {
-        margin-top: 20px; /* Juster denne værdi efter behov */
+        margin-top: 20px;
     }
     footer a.footertilmelding {
-        margin-top: 20px; /* Juster denne værdi efter behov */
+        margin-top: 20px; 
     }
 
-    /* Flyt "SOCIAL MEDIA" tættere på "Privatlivspolitik" */
+    /* move "SOCIAL MEDIA" closer to "Privatlivspolitik" */
     footer .SOCIAL {
-        margin-top: 10px; /* Juster denne værdi efter behov */
-        margin-bottom: 10px; /* Juster denne værdi efter behov */
+        margin-top: 10px; 
+        margin-bottom: 10px; 
     }
     
 }
-/* Tilpas placeringen af elementerne i stor skærm */
+/* Adjust the position of the elements in large screen */
+/* Move the ".footertilmelding" and ".SOCIAL" elements up by 200 pixels */
 @media (min-width: 992px) {
     footer .footertilmelding,
     footer .SOCIAL {
-        margin-top: -200px; /* Juster denne værdi efter behov for at flytte opad */
+        margin-top: -200px;  
     }
 }
-/* Ændringer til label */
-
+/* changes to label - text under the button */
     footer label {
-        white-space: pre-line; /* Beholder linjeskift i teksten */
+        white-space: pre-line; 
     }
 
